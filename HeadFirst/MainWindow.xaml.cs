@@ -24,7 +24,7 @@ namespace HeadFirst
         {
             InitializeComponent();
 
-            //커밋 취소 테스트 다시 진행
+            //커밋 취소 테스트
         }        
     }
 }
