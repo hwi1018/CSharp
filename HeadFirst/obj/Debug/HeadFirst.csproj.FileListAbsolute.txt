@@ -13,3 +13,9 @@ D:\Git\CSharp\HeadFirst\obj\Debug\HeadFirst.csproj.GenerateResource.cache
 D:\Git\CSharp\HeadFirst\obj\Debug\HeadFirst.csproj.CoreCompileInputs.cache
 D:\Git\CSharp\HeadFirst\obj\Debug\HeadFirst.exe
 D:\Git\CSharp\HeadFirst\obj\Debug\HeadFirst.pdb
+D:\Git\CSharp\HeadFirst\bin\Debug\BeeCompany.dll
+D:\Git\CSharp\HeadFirst\bin\Debug\BeeCompany.pdb
+D:\Git\CSharp\HeadFirst\obj\Debug\HeadFirst.csproj.CopyComplete
+D:\Git\CSharp\HeadFirst\obj\Debug\NumericUpDown.g.cs
+D:\Git\CSharp\HeadFirst\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Git\CSharp\HeadFirst\obj\Debug\NumericUpDown.baml

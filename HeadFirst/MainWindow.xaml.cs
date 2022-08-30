@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using BeeCompany;
 
 namespace HeadFirst
 {
@@ -20,11 +21,33 @@ namespace HeadFirst
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        Queen queen;
         public MainWindow()
         {
             InitializeComponent();
 
-            //커밋 취소 테스트
-        }        
+
+            Worker[] workers = new Worker[4];
+
+            workers[0] = new Worker(new string[] { "Nectar Collector", "Honey Manufacturing" }, 175);
+            workers[1] = new Worker(new string[] { "Egg Care", "Baby Bee Tutoring" }, 114);
+            workers[2] = new Worker(new string[] { "Hive Maintenance", "Sting Patrol" }, 149);
+            workers[3] = new Worker(new string[] { "Nectar Collector", "Honey Manufacturing",
+            "Egg Care", "Baby Bee Tutoring", "Hive Maintenance"}, 155);
+
+            queen = new Queen(workers);
+           
+        }
+
+        private void BtnAssign_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        
+        private void BtnWorkShift_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

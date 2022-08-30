@@ -1,0 +1,6 @@
+D:\Git\CSharp\BeeCompany\bin\Debug\BeeCompany.dll
+D:\Git\CSharp\BeeCompany\bin\Debug\BeeCompany.pdb
+D:\Git\CSharp\BeeCompany\obj\Debug\BeeCompany.csprojAssemblyReference.cache
+D:\Git\CSharp\BeeCompany\obj\Debug\BeeCompany.csproj.CoreCompileInputs.cache
+D:\Git\CSharp\BeeCompany\obj\Debug\BeeCompany.dll
+D:\Git\CSharp\BeeCompany\obj\Debug\BeeCompany.pdb

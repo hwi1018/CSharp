@@ -5,16 +5,49 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HeadFirst"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="400" Width="500">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
+            <RowDefinition Height="0.7*"></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-        </Grid.ColumnDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="0.4*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <GroupBox Margin="10" Header="Worker Bee Assignments">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition Width="0.4*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Worker bee Job"></Label>
+                    <ComboBox Grid.Row="1" Margin="2">
+                        <ComboBoxItem Content="Nectar Collector"></ComboBoxItem>
+                        <ComboBoxItem Content="Egg Care"></ComboBoxItem>
+                        <ComboBoxItem Content="Hive Maintenance"></ComboBoxItem>
+                        <ComboBoxItem Content="Baby Bee Tutoring"></ComboBoxItem>
+                        <ComboBoxItem Content="Sting Patrol"></ComboBoxItem>
+                    </ComboBox>
+                    <Button Grid.Row="2" Margin="2" x:Name="btnAssign" Content="Assing this job to bee" Click="BtnAssign_Click"></Button>
+                    
+                    <Label Grid.Column="1" Content="Shifts"></Label>
+                    <local:NumericUpDown Grid.Row="1" Grid.Column="1" Margin="2"></local:NumericUpDown>
+                </Grid>
+            </GroupBox>
+            <Button x:Name="btnWorkShift" Grid.Column="1" Margin="15" Click="BtnWorkShift_Click">Work the Shift</Button>
+        </Grid>
+        <Grid Grid.Row="1">
+            <ListView x:Name="lv_Items" Margin="2">
+                
+            </ListView>
+        </Grid>
 
     </Grid>
 </Window>
