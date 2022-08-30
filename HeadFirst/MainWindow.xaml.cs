@@ -23,6 +23,8 @@ namespace HeadFirst
         public MainWindow()
         {
             InitializeComponent();
+
+            //커밋 취소 테스트
         }        
     }
 }
