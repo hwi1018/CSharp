@@ -23,12 +23,12 @@ namespace HeadFirst
     {
 
         Queen queen;
+        Worker[] workers;
         public MainWindow()
         {
             InitializeComponent();
 
-
-            Worker[] workers = new Worker[4];
+            workers = new Worker[4];
 
             workers[0] = new Worker(new string[] { "Nectar Collector", "Honey Manufacturing" }, 175);
             workers[1] = new Worker(new string[] { "Egg Care", "Baby Bee Tutoring" }, 114);
@@ -42,12 +42,22 @@ namespace HeadFirst
 
         private void BtnAssign_Click(object sender, RoutedEventArgs e)
         {
-
+            if (queen.AssignWork(cmbWorks.Text, int.Parse(numericUpDown.ShiftValue)))
+            {
+                MessageBox.Show("No Workers are available to do the job " + cmbWorks.Text,
+                    "The Queen Bee Says");
+            }
+            else
+            {
+                MessageBox.Show(
+                    "The Job " + cmbWorks.SelectedItem.ToString() + " will be done in " + numericUpDown.ShiftValue + "shift",
+                    "The Queen Bee Says");
+            }
         }
         
         private void BtnWorkShift_Click(object sender, RoutedEventArgs e)
         {
-
+            txtWorkLog.Text = queen.WorkTheNextShift();
         }
     }
 }

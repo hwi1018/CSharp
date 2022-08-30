@@ -21,7 +21,12 @@ namespace HeadFirst
     /// </summary>
     public partial class NumericUpDown : UserControl
     {
-        int minvalue = 0, maxvalue = 100, startvalue = 10;
+        public string ShiftValue
+        {
+            get { return NUDTextBox.Text; }
+        }
+
+        int minvalue = 0, maxvalue = 10, startvalue = 0;
         public NumericUpDown()
         {
             InitializeComponent();

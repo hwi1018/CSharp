@@ -28,8 +28,9 @@
                         <ColumnDefinition Width="0.4*"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
                     <Label Content="Worker bee Job"></Label>
-                    <ComboBox Grid.Row="1" Margin="2">
+                    <ComboBox x:Name="cmbWorks" Grid.Row="1" Margin="2">
                         <ComboBoxItem Content="Nectar Collector"></ComboBoxItem>
+                        <ComboBoxItem Content="Honey Manufacturing"></ComboBoxItem>
                         <ComboBoxItem Content="Egg Care"></ComboBoxItem>
                         <ComboBoxItem Content="Hive Maintenance"></ComboBoxItem>
                         <ComboBoxItem Content="Baby Bee Tutoring"></ComboBoxItem>
@@ -38,15 +39,15 @@
                     <Button Grid.Row="2" Margin="2" x:Name="btnAssign" Content="Assing this job to bee" Click="BtnAssign_Click"></Button>
                     
                     <Label Grid.Column="1" Content="Shifts"></Label>
-                    <local:NumericUpDown Grid.Row="1" Grid.Column="1" Margin="2"></local:NumericUpDown>
+                    <local:NumericUpDown x:Name="numericUpDown" Grid.Row="1" Grid.Column="1" Margin="2"></local:NumericUpDown>
                 </Grid>
             </GroupBox>
             <Button x:Name="btnWorkShift" Grid.Column="1" Margin="15" Click="BtnWorkShift_Click">Work the Shift</Button>
         </Grid>
         <Grid Grid.Row="1">
-            <ListView x:Name="lv_Items" Margin="2">
-                
-            </ListView>
+            <Border BorderBrush="Black" BorderThickness="2">
+                <TextBlock x:Name="txtWorkLog" TextWrapping="Wrap" Margin="2"></TextBlock>
+            </Border>
         </Grid>
 
     </Grid>
