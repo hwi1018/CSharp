@@ -16,7 +16,5 @@
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <Button x:Name="btnTest" Click="BtnTest_Click" Margin="10">TEST</Button>
-        <Label Grid.Column="1" x:Name="lblLabel" Content=""></Label>
     </Grid>
 </Window>
