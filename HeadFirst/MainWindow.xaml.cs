@@ -24,5 +24,12 @@ namespace HeadFirst
         {
             InitializeComponent();
         }
+
+        private void BtnTest_Click(object sender, RoutedEventArgs e)
+        {
+            Button btn = sender as Button;
+
+            lblLabel.Content = btn.Content;
+        }
     }
 }
