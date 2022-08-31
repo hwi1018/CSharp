@@ -1,0 +1,23 @@
+﻿<Window x:Class="HeadFirst.House"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HeadFirst"
+        mc:Ignorable="d"
+        Title="Explore the House" Height="450" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="0.3*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid>
+            <TextBox x:Name="txtDescription" TextWrapping="Wrap" FontSize="11" Margin="10"></TextBox>
+        </Grid>
+        <Grid Grid.Row="1" Margin="10">
+            <Button x:Name="btnGoHere" Click="BtnGoHere_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30">Go Here</Button>
+            <ComboBox x:Name="cmbExits" HorizontalAlignment="Right" VerticalAlignment="Top" Height="30" Width="450"></ComboBox>
+            <Button x:Name="btnGoThroughTheDoor" Click="BtnGoThroughTheDoor_Click" VerticalAlignment="Bottom" Width="575" Height="30">Go Through The Door</Button>
+        </Grid>
+    </Grid>
+</Window>
