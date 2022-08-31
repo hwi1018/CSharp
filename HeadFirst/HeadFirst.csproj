@@ -55,6 +55,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="ClownTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -62,6 +66,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClownTest.xaml.cs">
+      <DependentUpon>ClownTest.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -105,6 +112,10 @@
     <ProjectReference Include="..\BeeCompany\BeeCompany.csproj">
       <Project>{866703ff-b511-49d5-b986-0a28d214ad2e}</Project>
       <Name>BeeCompany</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InterfaceTest_IClown\InterfaceTest_IClown.csproj">
+      <Project>{2c4650ae-a4e8-4366-b470-9d4c857979ca}</Project>
+      <Name>InterfaceTest_IClown</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
