@@ -30,6 +30,7 @@ namespace HeadFirst
 
             workers = new Worker[4];
 
+            //자신이 할 수 있는 일을 설정한다.
             workers[0] = new Worker(new string[] { "Nectar Collector", "Honey Manufacturing" }, 175);
             workers[1] = new Worker(new string[] { "Egg Care", "Baby Bee Tutoring" }, 114);
             workers[2] = new Worker(new string[] { "Hive Maintenance", "Sting Patrol" }, 149);
@@ -42,7 +43,7 @@ namespace HeadFirst
 
         private void BtnAssign_Click(object sender, RoutedEventArgs e)
         {
-            if (queen.AssignWork(cmbWorks.Text, int.Parse(numericUpDown.ShiftValue)))
+            if (queen.AssignWork(cmbWorks.Text, int.Parse(numericUpDown.ShiftValue))==false)
             {
                 MessageBox.Show("No Workers are available to do the job " + cmbWorks.Text,
                     "The Queen Bee Says");
