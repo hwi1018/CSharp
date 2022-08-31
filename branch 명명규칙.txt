@@ -1,0 +1,20 @@
+1. master branch
+제품 출시 브랜치
+
+2. develop branch
+다음 출시 버전 개발
+
+3. supporting branch
+팀 개발을 용이하게 평행 개발 가능, 제한된 수명을 가짐
+브랜치가 늘어나면 용량이 늘어나서 기능 개발이 끝난 뒤 없어질 가능성이 있음
+
+	1) feature branch : develop에서 분기하는 브랜치
+	2) release branch
+	3) hotfix branch : master에서 분기하는 브랜치
+	
+기본적인 루틴
+
+main에서 기능별 브랜치를 따고
+기능별 브랜치 작업을 한뒤
+main에 pr
+	
