@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeadFirst", "HeadFirst.cspr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeeCompany", "..\BeeCompany\BeeCompany.csproj", "{866703FF-B511-49D5-B986-0A28D214AD2E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceTest_IClown", "..\InterfaceTest_IClown\InterfaceTest_IClown.csproj", "{2C4650AE-A4E8-4366-B470-9D4C857979CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{866703FF-B511-49D5-B986-0A28D214AD2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{866703FF-B511-49D5-B986-0A28D214AD2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{866703FF-B511-49D5-B986-0A28D214AD2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C4650AE-A4E8-4366-B470-9D4C857979CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C4650AE-A4E8-4366-B470-9D4C857979CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C4650AE-A4E8-4366-B470-9D4C857979CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C4650AE-A4E8-4366-B470-9D4C857979CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
