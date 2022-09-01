@@ -1,6 +1,0 @@
-D:\Git\CSharp\Feat\Interface\InterfaceTest_IClown\bin\Debug\InterfaceTest_IClown.dll
-D:\Git\CSharp\Feat\Interface\InterfaceTest_IClown\bin\Debug\InterfaceTest_IClown.pdb
-D:\Git\CSharp\Feat\Interface\InterfaceTest_IClown\obj\Debug\InterfaceTest_IClown.csprojAssemblyReference.cache
-D:\Git\CSharp\Feat\Interface\InterfaceTest_IClown\obj\Debug\InterfaceTest_IClown.csproj.CoreCompileInputs.cache
-D:\Git\CSharp\Feat\Interface\InterfaceTest_IClown\obj\Debug\InterfaceTest_IClown.dll
-D:\Git\CSharp\Feat\Interface\InterfaceTest_IClown\obj\Debug\InterfaceTest_IClown.pdb
