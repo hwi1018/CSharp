@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace House
 {
-    //문을 가지고 있는 도어
-    public class RoomWithDoor:Room,IHasExteriorDoor
-    {
-        public RoomWithDoor(string name, string deco, string doordesc):base(name, deco)
+    //외부로 나가는 문이 있는 방은 숨을 수 있는 방
+    public class RoomWithDoor:RoomWithHidingPlace,IHasExteriorDoor
+    {      
+        public RoomWithDoor(string name, string deco, string doordesc,
+            string hidingPlaceName):base(name, deco, hidingPlaceName)
         {
             this.DoorDescription = doordesc;
         }

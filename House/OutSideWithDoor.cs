@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace House
 {
-    public class OutSideWithDoor:OutSide, IHasExteriorDoor
+    //문이있는 방은 무조건 숨을 수 있는 곳
+    public class OutSideWithDoor:OutSideWithHidingPlace, IHasExteriorDoor
     {
-        public OutSideWithDoor(string name, bool hot, string doordesc):base(name, hot)
+        public OutSideWithDoor(string name, bool hot, string doordesc, string hidingPlaceName):base(name, hot, hidingPlaceName)
         {
             this.DoorDescription = doordesc;
         }

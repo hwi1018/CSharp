@@ -41,14 +41,17 @@ namespace HeadFirst
 
         private void CreateObjects()
         {
-            livingRoom = new RoomWithDoor("living Room", "carpet", "oak door");
+            
+            livingRoom = new RoomWithDoor("living Room", "carpet", "oak door", "X");
             diningRoom = new Room("dining Room", "crystal chandelier");
-            kitchen = new RoomWithDoor("kitchen", "steel appliances", "screen door");
+            kitchen = new RoomWithDoor("kitchen", "steel appliances", "screen door", "X");
 
-            frontYard = new OutSideWithDoor("front Yard", false, "oak door");
-            backYard = new OutSideWithDoor("back Yard", true, "screen door");
+            frontYard = new OutSideWithDoor("front Yard", false, "oak door","X");
+            backYard = new OutSideWithDoor("back Yard", true, "screen door", "X");
             garden = new OutSide("garden", false);
 
+            //부모의 참조변수로 자식클래스의 객체를 접근할 수 있음
+            //Roow, OutSide, RoomWithDoor, OutSideWithDoor는 모두 Location을 상속 받음
             diningRoom.Exits = new Location[] { livingRoom, kitchen };
             livingRoom.Exits = new Location[] { diningRoom };
             kitchen.Exits = new Location[] { diningRoom };
